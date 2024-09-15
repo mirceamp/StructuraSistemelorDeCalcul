@@ -1,0 +1,12 @@
+[
+{
+  "directory": "C:/Users/MMP/Lab3_Zynq_GPIO/build",
+  "command": "G:\\Xilinx\\Vitis\\2024.1\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe -isystem C:/Users/MMP/Zynq_GPIO_PS_Lab/export/Zynq_GPIO_PS_Lab/sw/standalone_ps7_cortexa9_0/include -isystem G:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/12.2.0/include -isystem G:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/12.2.0/include-fixed -isystem G:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include  -O2 -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=C:/Users/MMP/Zynq_GPIO_PS_Lab/export/Zynq_GPIO_PS_Lab/sw/standalone_ps7_cortexa9_0/Xilinx.spec -IC:/Users/MMP/Zynq_GPIO_PS_Lab/export/Zynq_GPIO_PS_Lab/sw/standalone_ps7_cortexa9_0/include -Wall -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\Lab3_Zynq_GPIO.elf.dir\\Exemplu_GPIO.c.obj -c C:\\Users\\MMP\\Lab3_Zynq_GPIO\\src\\Exemplu_GPIO.c",
+  "file": "C:\\Users\\MMP\\Lab3_Zynq_GPIO\\src\\Exemplu_GPIO.c"
+},
+{
+  "directory": "C:/Users/MMP/Lab3_Zynq_GPIO/build",
+  "command": "G:\\Xilinx\\Vitis\\2024.1\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe -isystem C:/Users/MMP/Zynq_GPIO_PS_Lab/export/Zynq_GPIO_PS_Lab/sw/standalone_ps7_cortexa9_0/include -isystem G:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/12.2.0/include -isystem G:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/12.2.0/include-fixed -isystem G:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include  -O2 -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=C:/Users/MMP/Zynq_GPIO_PS_Lab/export/Zynq_GPIO_PS_Lab/sw/standalone_ps7_cortexa9_0/Xilinx.spec -IC:/Users/MMP/Zynq_GPIO_PS_Lab/export/Zynq_GPIO_PS_Lab/sw/standalone_ps7_cortexa9_0/include -Wall -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\Lab3_Zynq_GPIO.elf.dir\\platform.c.obj -c C:\\Users\\MMP\\Lab3_Zynq_GPIO\\src\\platform.c",
+  "file": "C:\\Users\\MMP\\Lab3_Zynq_GPIO\\src\\platform.c"
+}
+]

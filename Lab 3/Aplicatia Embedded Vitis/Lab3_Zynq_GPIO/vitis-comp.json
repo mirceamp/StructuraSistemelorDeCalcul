@@ -1,0 +1,15 @@
+{
+  "name": "Lab3_Zynq_GPIO",
+  "type": "HOST",
+  "platform": "C:\\Users\\MMP\\Zynq_GPIO_PS_Lab\\export\\Zynq_GPIO_PS_Lab\\Zynq_GPIO_PS_Lab.xpfm",
+  "domain": "standalone_ps7_cortexa9_0",
+  "cpuInstance": "ps7_cortexa9_0",
+  "cpuType": "cortex-a9",
+  "os": "standalone",
+  "configuration": {
+    "componentType": "HOST",
+    "hostToolchainConfigurations": []
+  },
+  "domainRealName": "standalone_ps7_cortexa9_0",
+  "applicationFlow": "EMBEDDED"
+}
