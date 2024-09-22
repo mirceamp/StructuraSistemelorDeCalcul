@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Sep 20 22:18:05 2024
+# Process ID: 9080
+# Current directory: C:/Users/MMP/Zybo_CLA/Zybo_CLA.runs/design_1_axi_gpio_6_0_synth_1
+# Command line: vivado.exe -log design_1_axi_gpio_6_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_gpio_6_0.tcl
+# Log file: C:/Users/MMP/Zybo_CLA/Zybo_CLA.runs/design_1_axi_gpio_6_0_synth_1/design_1_axi_gpio_6_0.vds
+# Journal file: C:/Users/MMP/Zybo_CLA/Zybo_CLA.runs/design_1_axi_gpio_6_0_synth_1\vivado.jou
+# Running On        :DESKTOP-46511SM
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-11370H @ 3.30GHz
+# CPU Frequency     :3302 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :42626 MB
+# Swap memory       :6174 MB
+# Total Virtual     :48800 MB
+# Available Virtual :36586 MB
+#-----------------------------------------------------------
+source design_1_axi_gpio_6_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 573.727 ; gain = 239.699
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_6_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 1c4aa2ef00e50dbe to dir: C:/Users/MMP/Zybo_CLA/Zybo_CLA.runs/design_1_axi_gpio_6_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/MMP/Zybo_CLA/Zybo_CLA.cache/ip/2024.1/1/c/1c4aa2ef00e50dbe/design_1_axi_gpio_7_0.dcp to C:/Users/MMP/Zybo_CLA/Zybo_CLA.runs/design_1_axi_gpio_6_0_synth_1/design_1_axi_gpio_6_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/MMP/Zybo_CLA/Zybo_CLA.cache/ip/2024.1/1/c/1c4aa2ef00e50dbe/design_1_axi_gpio_7_0_sim_netlist.v to C:/Users/MMP/Zybo_CLA/Zybo_CLA.runs/design_1_axi_gpio_6_0_synth_1/design_1_axi_gpio_6_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/MMP/Zybo_CLA/Zybo_CLA.cache/ip/2024.1/1/c/1c4aa2ef00e50dbe/design_1_axi_gpio_7_0_sim_netlist.vhdl to C:/Users/MMP/Zybo_CLA/Zybo_CLA.runs/design_1_axi_gpio_6_0_synth_1/design_1_axi_gpio_6_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/MMP/Zybo_CLA/Zybo_CLA.cache/ip/2024.1/1/c/1c4aa2ef00e50dbe/design_1_axi_gpio_7_0_stub.v to C:/Users/MMP/Zybo_CLA/Zybo_CLA.runs/design_1_axi_gpio_6_0_synth_1/design_1_axi_gpio_6_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/MMP/Zybo_CLA/Zybo_CLA.cache/ip/2024.1/1/c/1c4aa2ef00e50dbe/design_1_axi_gpio_7_0_stub.vhdl to C:/Users/MMP/Zybo_CLA/Zybo_CLA.runs/design_1_axi_gpio_6_0_synth_1/design_1_axi_gpio_6_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_axi_gpio_6_0, cache-ID = 1c4aa2ef00e50dbe.
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 20 22:18:22 2024...

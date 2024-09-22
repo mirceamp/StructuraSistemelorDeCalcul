@@ -1,0 +1,55 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.539389",
+   "Default View_TopLeft":"-354,7",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 1410 -y 510 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1410 -y 530 -defaultsOSRD
+preplace port btns_4bits -pg 1 -lvl 5 -x 1410 -y 1170 -defaultsOSRD
+preplace port sws_4bits -pg 1 -lvl 5 -x 1410 -y 1030 -defaultsOSRD
+preplace port leds_4bits -pg 1 -lvl 5 -x 1410 -y 890 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 240 -y 600 -defaultsOSRD
+preplace inst carryLookaheadAdder_0 -pg 1 -lvl 4 -x 1260 -y 430 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 1000 -y 1170 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 3 -x 1000 -y 1030 -defaultsOSRD
+preplace inst axi_gpio_2 -pg 1 -lvl 3 -x 1000 -y 890 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 630 -y 260 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 240 -y 860 -defaultsOSRD
+preplace inst axi_gpio_cout -pg 1 -lvl 3 -x 1000 -y 750 -defaultsOSRD
+preplace inst axi_gpio_sum -pg 1 -lvl 3 -x 1000 -y 610 -defaultsOSRD
+preplace inst axi_gpio_cin -pg 1 -lvl 3 -x 1000 -y 160 -defaultsOSRD
+preplace inst axi_gpio_x -pg 1 -lvl 3 -x 1000 -y 300 -defaultsOSRD
+preplace inst axi_gpio_y -pg 1 -lvl 3 -x 1000 -y 440 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 450 470 540 840
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 750 450
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 480 550 850
+preplace netloc carryLookaheadAdder_0_cout 1 3 2 NJ 760 1370
+preplace netloc carryLookaheadAdder_0_sum 1 3 2 N 620 1380
+preplace netloc axi_gpio_cin_gpio_io_o 1 3 1 1150 170n
+preplace netloc axi_gpio_6_gpio_io_o 1 3 1 1140 310n
+preplace netloc axi_gpio_y_gpio_io_o 1 3 1 N 450
+preplace netloc processing_system7_0_DDR 1 1 4 460J 520 NJ 520 NJ 520 1390J
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ 530 NJ 530 NJ 530 NJ
+preplace netloc axi_gpio_0_GPIO 1 3 2 NJ 1170 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 450 60n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 830 190n
+preplace netloc axi_gpio_1_GPIO 1 3 2 NJ 1030 NJ
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 820 210n
+preplace netloc axi_gpio_2_GPIO 1 3 2 NJ 890 NJ
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 810 230n
+preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 800 250n
+preplace netloc ps7_0_axi_periph_M04_AXI 1 2 1 790 270n
+preplace netloc ps7_0_axi_periph_M05_AXI 1 2 1 780 140n
+preplace netloc ps7_0_axi_periph_M06_AXI 1 2 1 860 280n
+preplace netloc ps7_0_axi_periph_M07_AXI 1 2 1 780 330n
+levelinfo -pg 1 0 240 630 1000 1260 1410
+pagesize -pg 1 -db -bbox -sgen 0 0 1530 1250
+"
+}
+{
+   "da_axi4_cnt":"8",
+   "da_board_cnt":"3",
+   "da_ps7_cnt":"1"
+}
