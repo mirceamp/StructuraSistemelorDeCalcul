@@ -7,4 +7,4 @@ Copiati continutul acestui director in folderul boards din directorul:
 HardDisk-ul unde ati instalat:\Xilinx\Vivado\2024.1\data\boards
 
 Daca nu copiati continutul folderului boards, in directorul mentionat, nu veti putea dezvolta aplicatii pentru placile Zybo. Dupa instalare, aceste fisiere NU apar implicit in Vivado.
-Alternativ puteti instala placile pe care doriti sa lucrati de pe site-ul producatorilor sau din repositori-ul de git al acestora.
+Alternativ puteti instala placile pe care doriti sa lucrati de pe site-ul producatorilor sau din repositori-ul de git al acestora. Dupa adaugarea folderului boards in Vivado, restartati calculatorul si redeschideti mediul Vivado.
