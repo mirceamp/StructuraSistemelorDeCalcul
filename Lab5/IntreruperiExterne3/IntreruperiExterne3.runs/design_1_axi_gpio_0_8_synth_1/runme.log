@@ -1,0 +1,453 @@
+
+*** Running vivado
+    with args -log design_1_axi_gpio_0_8.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_gpio_0_8.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Sep 26 05:31:56 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_axi_gpio_0_8.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 573.516 ; gain = 236.914
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_0_8
+Command: synth_design -top design_1_axi_gpio_0_8 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Device 21-9227] Part: xc7z010clg400-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16712
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1433.062 ; gain = 447.363
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_8' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_8/synth/design_1_axi_gpio_0_8.vhd:85]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 1 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 1 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:1270' bound to instance 'U0' of component 'axi_gpio' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_8/synth/design_1_axi_gpio_0_8.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:1356]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized3' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized4' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized5' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized6' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized7' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized7' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized8' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized8' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized9' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized9' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized10' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized10' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized11' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized11' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized12' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized12' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized13' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized13' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized14' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized14' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized15' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized15' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized16' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized16' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized17' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized17' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized18' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized18' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized19' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized19' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized20' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized20' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'interrupt_control' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/d8cc/hdl/interrupt_control_v3_1_vh_rfs.vhd:257]
+INFO: [Synth 8-256] done synthesizing module 'interrupt_control' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/d8cc/hdl/interrupt_control_v3_1_vh_rfs.vhd:257]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:181]
+INFO: [Synth 8-226] default block is never used [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:446]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:181]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:1356]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_8' (0#1) [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_8/synth/design_1_axi_gpio_0_8.vhd:85]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ipshared/4208/hdl/axi_gpio_v2_0_vh_rfs.vhd:354]
+WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_in in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ABus_Reg[1] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ABus_Reg[2] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ABus_Reg[3] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ABus_Reg[4] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ABus_Reg[7] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ABus_Reg[8] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BE_Reg[0] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BE_Reg[1] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BE_Reg[2] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BE_Reg[3] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[0] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[1] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[2] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[3] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[4] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[5] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[6] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[7] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[8] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[9] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[10] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[11] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[12] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[13] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[14] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[15] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[16] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[17] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[18] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[19] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[20] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[21] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[22] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[23] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[24] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[25] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[26] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[27] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[28] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[29] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[30] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPIO2_IO_I[31] in module GPIO_Core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[1] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[2] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[3] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[4] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[5] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[6] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[7] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[8] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[9] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[10] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[11] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[12] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[13] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[14] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[15] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[16] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[17] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[18] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[19] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[20] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[21] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[22] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[23] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[24] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[25] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[26] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[27] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[28] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[29] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[30] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_be[1] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_be[2] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_be[3] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[0] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[1] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[2] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[3] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[4] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[5] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[6] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[9] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[11] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[12] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[13] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[14] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[15] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[0] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[1] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[2] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[3] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[4] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[5] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[6] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[9] in module interrupt_control is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1554.555 ; gain = 568.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1554.555 ; gain = 568.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1554.555 ; gain = 568.855
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1554.555 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_8/design_1_axi_gpio_0_8_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_8/design_1_axi_gpio_0_8_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_8/design_1_axi_gpio_0_8_board.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_8/design_1_axi_gpio_0_8_board.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_8/design_1_axi_gpio_0_8.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_8/design_1_axi_gpio_0_8.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.runs/design_1_axi_gpio_0_8_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.runs/design_1_axi_gpio_0_8_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1643.902 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  FDR => FDRE: 6 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1643.906 ; gain = 0.004
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1643.906 ; gain = 658.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1643.906 ; gain = 658.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.runs/design_1_axi_gpio_0_8_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1643.906 ; gain = 658.207
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1643.906 ; gain = 658.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 54    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 5     
+	   2 Input    2 Bit        Muxes := 3     
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 31    
+	   4 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1643.906 ; gain = 658.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1643.906 ; gain = 658.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1643.906 ; gain = 658.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1643.906 ; gain = 658.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:50 . Memory (MB): peak = 1643.906 ; gain = 658.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:50 . Memory (MB): peak = 1643.906 ; gain = 658.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1643.906 ; gain = 658.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1643.906 ; gain = 658.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1643.906 ; gain = 658.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1643.906 ; gain = 658.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |     5|
+|3     |LUT3 |    19|
+|4     |LUT4 |    13|
+|5     |LUT5 |    31|
+|6     |LUT6 |    14|
+|7     |FDR  |     4|
+|8     |FDRE |    71|
+|9     |FDSE |     4|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1643.906 ; gain = 658.207
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:48 . Memory (MB): peak = 1643.906 ; gain = 568.855
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1643.906 ; gain = 658.207
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1643.906 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1643.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  FDR => FDRE: 4 instances
+
+Synth Design complete | Checksum: b8f06c51
+INFO: [Common 17-83] Releasing license: Synthesis
+93 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1643.906 ; gain = 1055.293
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1643.906 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.runs/design_1_axi_gpio_0_8_synth_1/design_1_axi_gpio_0_8.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_gpio_0_8, cache-ID = ca37145583d906e2
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1643.906 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.runs/design_1_axi_gpio_0_8_synth_1/design_1_axi_gpio_0_8.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_axi_gpio_0_8_utilization_synth.rpt -pb design_1_axi_gpio_0_8_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 26 05:33:04 2024...

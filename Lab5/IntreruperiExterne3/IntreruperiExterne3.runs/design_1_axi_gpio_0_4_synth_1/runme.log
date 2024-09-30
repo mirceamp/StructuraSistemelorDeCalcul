@@ -1,0 +1,25 @@
+
+*** Running vivado
+    with args -log design_1_axi_gpio_0_4.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_gpio_0_4.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Sep 26 03:02:53 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_axi_gpio_0_4.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 573.410 ; gain = 240.059
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_0_4
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 1c4aa2ef00e50dbe to dir: C:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.runs/design_1_axi_gpio_0_4_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.cache/ip/2024.1/1/c/1c4aa2ef00e50dbe/design_1_axi_gpio_0_5.dcp to C:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.runs/design_1_axi_gpio_0_4_synth_1/design_1_axi_gpio_0_4.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.cache/ip/2024.1/1/c/1c4aa2ef00e50dbe/design_1_axi_gpio_0_5_sim_netlist.v to C:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.runs/design_1_axi_gpio_0_4_synth_1/design_1_axi_gpio_0_4_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.cache/ip/2024.1/1/c/1c4aa2ef00e50dbe/design_1_axi_gpio_0_5_sim_netlist.vhdl to C:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.runs/design_1_axi_gpio_0_4_synth_1/design_1_axi_gpio_0_4_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.cache/ip/2024.1/1/c/1c4aa2ef00e50dbe/design_1_axi_gpio_0_5_stub.v to C:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.runs/design_1_axi_gpio_0_4_synth_1/design_1_axi_gpio_0_4_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.cache/ip/2024.1/1/c/1c4aa2ef00e50dbe/design_1_axi_gpio_0_5_stub.vhdl to C:/Users/MMP/IntreruperiExterne3/IntreruperiExterne3.runs/design_1_axi_gpio_0_4_synth_1/design_1_axi_gpio_0_4_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_axi_gpio_0_4, cache-ID = 1c4aa2ef00e50dbe.
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 26 03:03:16 2024...
