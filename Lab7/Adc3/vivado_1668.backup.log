@@ -1,0 +1,368 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Oct 18 12:06:09 2024
+# Process ID: 1668
+# Current directory: C:/Users/MMP/ADCFinal/Adc3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8640 C:\Users\MMP\ADCFinal\Adc3\testADC3.xpr
+# Log file: C:/Users/MMP/ADCFinal/Adc3/vivado.log
+# Journal file: C:/Users/MMP/ADCFinal/Adc3\vivado.jou
+# Running On        :DESKTOP-46511SM
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-11370H @ 3.30GHz
+# CPU Frequency     :3302 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :42626 MB
+# Swap memory       :6174 MB
+# Total Virtual     :48800 MB
+# Available Virtual :42912 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/MMP/ADCFinal/Adc3/testADC3.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at G:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/MMP/testADC3' since last save.
+INFO: [filemgmt 56-1] Board Part Repository Path: Directory not found as 'C:/Users/MMP/ADCFinal/AppData/Roaming/Xilinx/Vivado/2024.1/xhub/board_store/xilinx_board_store'; using path 'C:/Users/MMP/AppData/Roaming/Xilinx/Vivado/2024.1/xhub/board_store/xilinx_board_store' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:15 . Memory (MB): peak = 1659.758 ; gain = 550.777
+update_compile_order -fileset sources_1
+import_files -norecurse C:/Users/MMP/imppartire/project_2.srcs/sources_1/new/Restoring_Division_FSM_Gen.vhd
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/MMP/ADCFinal/Adc3/testADC3.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <C:/Users/MMP/ADCFinal/Adc3/testADC3.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:xadc_wiz:3.3 - xadc_wiz_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Successfully read diagram <design_1> from block design file <C:/Users/MMP/ADCFinal/Adc3/testADC3.srcs/sources_1/bd/design_1/design_1.bd>
+create_bd_cell -type module -reference RestoringDivision RestoringDivision_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+set_property location {2 691 -91} [get_bd_cells RestoringDivision_0]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins RestoringDivision_0/clk]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {2 527 -86} [get_bd_cells axi_gpio_0]
+set_property -dict [list \
+  CONFIG.C_ALL_OUTPUTS {1} \
+  CONFIG.C_GPIO_WIDTH {1} \
+] [get_bd_cells axi_gpio_0]
+connect_bd_net [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins RestoringDivision_0/resetare]
+WARNING: [BD 41-1306] The connection to interface pin </axi_gpio_0/gpio_io_o> is being overridden by the user with net <axi_gpio_0_gpio_io_o>. This pin will not be connected as a part of interface connection <GPIO>.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
+endgroup
+set_property location {1 181 -126} [get_bd_cells axi_gpio_1]
+set_property CONFIG.C_GPIO_WIDTH {1} [get_bd_cells axi_gpio_1]
+set_property CONFIG.C_ALL_INPUTS {1} [get_bd_cells axi_gpio_1]
+set_property name axi_gpio_resetare [get_bd_cells axi_gpio_0]
+set_property name axi_gpio_start [get_bd_cells axi_gpio_1]
+set_property location {4 1324 -58} [get_bd_cells axi_gpio_start]
+connect_bd_net [get_bd_pins RestoringDivision_0/gata] [get_bd_pins axi_gpio_start/gpio_io_i]
+WARNING: [BD 41-1306] The connection to interface pin </axi_gpio_start/gpio_io_i> is being overridden by the user with net <RestoringDivision_0_gata>. This pin will not be connected as a part of interface connection <GPIO>.
+set_property location {1 574 -167} [get_bd_cells axi_gpio_resetare]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {2 403 -67} [get_bd_cells axi_gpio_0]
+set_property -dict [list \
+  CONFIG.C_ALL_OUTPUTS {1} \
+  CONFIG.C_GPIO_WIDTH {1} \
+] [get_bd_cells axi_gpio_0]
+connect_bd_net [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins RestoringDivision_0/start]
+WARNING: [BD 41-1306] The connection to interface pin </axi_gpio_0/gpio_io_o> is being overridden by the user with net <axi_gpio_0_gpio_io_o1>. This pin will not be connected as a part of interface connection <GPIO>.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
+endgroup
+set_property location {1 131 -101} [get_bd_cells axi_gpio_1]
+set_property -dict [list \
+  CONFIG.C_ALL_OUTPUTS {1} \
+  CONFIG.C_GPIO_WIDTH {12} \
+] [get_bd_cells axi_gpio_1]
+set_property name axi_gpio_gata [get_bd_cells axi_gpio_start]
+set_property name axi_gpio_start [get_bd_cells axi_gpio_0]
+set_property name axi_gpio_dividend [get_bd_cells axi_gpio_1]
+connect_bd_net [get_bd_pins axi_gpio_dividend/gpio_io_o] [get_bd_pins RestoringDivision_0/dividend]
+WARNING: [BD 41-1306] The connection to interface pin </axi_gpio_dividend/gpio_io_o> is being overridden by the user with net <axi_gpio_dividend_gpio_io_o>. This pin will not be connected as a part of interface connection <GPIO>.
+set_property location {1.5 304 -222} [get_bd_cells axi_gpio_dividend]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {2 356 -77} [get_bd_cells axi_gpio_0]
+set_property name axi_gpio_divisor [get_bd_cells axi_gpio_0]
+set_property -dict [list \
+  CONFIG.C_ALL_OUTPUTS {1} \
+  CONFIG.C_GPIO_WIDTH {12} \
+] [get_bd_cells axi_gpio_divisor]
+connect_bd_net [get_bd_pins axi_gpio_divisor/gpio_io_o] [get_bd_pins RestoringDivision_0/divisor]
+WARNING: [BD 41-1306] The connection to interface pin </axi_gpio_divisor/gpio_io_o> is being overridden by the user with net <axi_gpio_divisor_gpio_io_o>. This pin will not be connected as a part of interface connection <GPIO>.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {4 1487 -260} [get_bd_cells axi_gpio_0]
+set_property -dict [list \
+  CONFIG.C_ALL_INPUTS {1} \
+  CONFIG.C_GPIO_WIDTH {12} \
+] [get_bd_cells axi_gpio_0]
+set_property name axi_gpio_quotient [get_bd_cells axi_gpio_0]
+connect_bd_net [get_bd_pins RestoringDivision_0/quotient] [get_bd_pins axi_gpio_quotient/gpio_io_i]
+WARNING: [BD 41-1306] The connection to interface pin </axi_gpio_quotient/gpio_io_i> is being overridden by the user with net <RestoringDivision_0_quotient>. This pin will not be connected as a part of interface connection <GPIO>.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {3 1230 -270} [get_bd_cells axi_gpio_0]
+set_property name axi_gpio_remainder [get_bd_cells axi_gpio_0]
+set_property -dict [list \
+  CONFIG.C_ALL_INPUTS {1} \
+  CONFIG.C_GPIO_WIDTH {13} \
+] [get_bd_cells axi_gpio_remainder]
+connect_bd_net [get_bd_pins axi_gpio_remainder/gpio_io_i] [get_bd_pins RestoringDivision_0/quotient]
+WARNING: [BD 41-1306] The connection to interface pin </axi_gpio_remainder/gpio_io_i> is being overridden by the user with net </RestoringDivision_0_quotient>. This pin will not be connected as a part of interface connection <GPIO>.
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins axi_gpio_remainder/gpio_io_i] [get_bd_pins RestoringDivision_0/quotient]'
+connect_bd_net [get_bd_pins axi_gpio_remainder/gpio_io_i] [get_bd_pins RestoringDivision_0/remainder]
+WARNING: [BD 41-1306] The connection to interface pin </axi_gpio_remainder/gpio_io_i> is being overridden by the user with net <RestoringDivision_0_remainder>. This pin will not be connected as a part of interface connection <GPIO>.
+save_bd_design
+Wrote  : <C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/MMP/ADCFinal/Adc3/testADC3.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_compile_order -fileset sources_1
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_dividend/S_AXI} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_dividend/S_AXI]
+Slave segment '/axi_gpio_dividend/S_AXI/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4120_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_divisor/S_AXI} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_divisor/S_AXI]
+Slave segment '/axi_gpio_divisor/S_AXI/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4121_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_gata/S_AXI} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_gata/S_AXI]
+Slave segment '/axi_gpio_gata/S_AXI/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4122_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_quotient/S_AXI} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_quotient/S_AXI]
+Slave segment '/axi_gpio_quotient/S_AXI/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4123_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_remainder/S_AXI} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_remainder/S_AXI]
+Slave segment '/axi_gpio_remainder/S_AXI/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4124_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_resetare/S_AXI} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_resetare/S_AXI]
+Slave segment '/axi_gpio_resetare/S_AXI/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4125_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_start/S_AXI} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_start/S_AXI]
+Slave segment '/axi_gpio_start/S_AXI/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4126_0000 [ 64K ]>.
+endgroup
+regenerate_bd_layout
+validate_bd_design
+make_wrapper -files [get_files C:/Users/MMP/ADCFinal/Adc3/testADC3.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/MMP/ADCFinal/Adc3/testADC3.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : c:/Users/MMP/ADCFinal/Adc3/testADC3.gen/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : c:/Users/MMP/ADCFinal/Adc3/testADC3.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : c:/Users/MMP/ADCFinal/Adc3/testADC3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+make_wrapper: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 2209.133 ; gain = 259.195
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/MMP/ADCFinal/Adc3/testADC3.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/Users/MMP/ADCFinal/Adc3/testADC3.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : c:/Users/MMP/ADCFinal/Adc3/testADC3.gen/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\imports\new\Restoring_Division_FSM_Gen.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+VHDL Output written to : c:/Users/MMP/ADCFinal/Adc3/testADC3.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : c:/Users/MMP/ADCFinal/Adc3/testADC3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block RestoringDivision_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_resetare .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_gata .
+ERROR: [Common 17-180] Spawn failed: No error
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_start .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_dividend .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_divisor .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_quotient .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_remainder .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/MMP/ADCFinal/Adc3/testADC3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file c:/Users/MMP/ADCFinal/Adc3/testADC3.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/Users/MMP/ADCFinal/Adc3/testADC3.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_auto_pc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_gpio_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_gpio_0_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_gpio_0_2
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_gpio_0_3
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_gpio_0_4
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_gpio_1_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_gpio_1_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_xbar_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_pc_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 9c5faa24eda63c5c to dir: c:/Users/MMP/ADCFinal/Adc3/testADC3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/MMP/ADCFinal/Adc3/testADC3.cache/ip/2024.1/9/c/9c5faa24eda63c5c/design_1_auto_pc_0.dcp to c:/Users/MMP/ADCFinal/Adc3/testADC3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/MMP/ADCFinal/Adc3/testADC3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/MMP/ADCFinal/Adc3/testADC3.cache/ip/2024.1/9/c/9c5faa24eda63c5c/design_1_auto_pc_0_sim_netlist.v to c:/Users/MMP/ADCFinal/Adc3/testADC3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/MMP/ADCFinal/Adc3/testADC3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/MMP/ADCFinal/Adc3/testADC3.cache/ip/2024.1/9/c/9c5faa24eda63c5c/design_1_auto_pc_0_sim_netlist.vhdl to c:/Users/MMP/ADCFinal/Adc3/testADC3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/MMP/ADCFinal/Adc3/testADC3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/MMP/ADCFinal/Adc3/testADC3.cache/ip/2024.1/9/c/9c5faa24eda63c5c/design_1_auto_pc_0_stub.v to c:/Users/MMP/ADCFinal/Adc3/testADC3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/MMP/ADCFinal/Adc3/testADC3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/MMP/ADCFinal/Adc3/testADC3.cache/ip/2024.1/9/c/9c5faa24eda63c5c/design_1_auto_pc_0_stub.vhdl to c:/Users/MMP/ADCFinal/Adc3/testADC3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/MMP/ADCFinal/Adc3/testADC3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 9c5faa24eda63c5c; cache size = 2.872 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_0_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_0_2
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_0_3
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_0_4
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_1_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xbar_0
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\imports\new\Restoring_Division_FSM_Gen.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\imports\new\Restoring_Division_FSM_Gen.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_gpio_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_gpio_0_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_gpio_0_2
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_gpio_0_3
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_gpio_0_4
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_gpio_1_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_gpio_1_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_xbar_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_0_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_0_2
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_0_3
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_0_4
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_1_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xbar_0
+[Fri Oct 18 12:18:39 2024] Launched design_1_RestoringDivision_0_0_synth_1, design_1_axi_gpio_0_1_synth_1, design_1_axi_gpio_0_3_synth_1, design_1_axi_gpio_0_4_synth_1, design_1_axi_gpio_0_2_synth_1, design_1_axi_gpio_1_0_synth_1, design_1_xbar_0_synth_1, design_1_axi_gpio_1_1_synth_1, design_1_axi_gpio_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_RestoringDivision_0_0_synth_1: C:/Users/MMP/ADCFinal/Adc3/testADC3.runs/design_1_RestoringDivision_0_0_synth_1/runme.log
+design_1_axi_gpio_0_1_synth_1: C:/Users/MMP/ADCFinal/Adc3/testADC3.runs/design_1_axi_gpio_0_1_synth_1/runme.log
+design_1_axi_gpio_0_3_synth_1: C:/Users/MMP/ADCFinal/Adc3/testADC3.runs/design_1_axi_gpio_0_3_synth_1/runme.log
+design_1_axi_gpio_0_4_synth_1: C:/Users/MMP/ADCFinal/Adc3/testADC3.runs/design_1_axi_gpio_0_4_synth_1/runme.log
+design_1_axi_gpio_0_2_synth_1: C:/Users/MMP/ADCFinal/Adc3/testADC3.runs/design_1_axi_gpio_0_2_synth_1/runme.log
+design_1_axi_gpio_1_0_synth_1: C:/Users/MMP/ADCFinal/Adc3/testADC3.runs/design_1_axi_gpio_1_0_synth_1/runme.log
+design_1_xbar_0_synth_1: C:/Users/MMP/ADCFinal/Adc3/testADC3.runs/design_1_xbar_0_synth_1/runme.log
+design_1_axi_gpio_1_1_synth_1: C:/Users/MMP/ADCFinal/Adc3/testADC3.runs/design_1_axi_gpio_1_1_synth_1/runme.log
+design_1_axi_gpio_0_0_synth_1: C:/Users/MMP/ADCFinal/Adc3/testADC3.runs/design_1_axi_gpio_0_0_synth_1/runme.log
+synth_1: C:/Users/MMP/ADCFinal/Adc3/testADC3.runs/synth_1/runme.log
+[Fri Oct 18 12:18:39 2024] Launched impl_1...
+Run output will be captured here: C:/Users/MMP/ADCFinal/Adc3/testADC3.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\imports\new\Restoring_Division_FSM_Gen.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\imports\new\Restoring_Division_FSM_Gen.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\imports\new\Restoring_Division_FSM_Gen.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\imports\new\Restoring_Division_FSM_Gen.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\imports\new\Restoring_Division_FSM_Gen.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\imports\new\Restoring_Division_FSM_Gen.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\imports\new\Restoring_Division_FSM_Gen.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\imports\new\Restoring_Division_FSM_Gen.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\imports\new\Restoring_Division_FSM_Gen.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\imports\new\Restoring_Division_FSM_Gen.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\imports\new\Restoring_Division_FSM_Gen.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\imports\new\Restoring_Division_FSM_Gen.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\imports\new\Restoring_Division_FSM_Gen.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\imports\new\Restoring_Division_FSM_Gen.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\imports\new\Restoring_Division_FSM_Gen.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\imports\new\Restoring_Division_FSM_Gen.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.srcs\sources_1\imports\new\Restoring_Division_FSM_Gen.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\synth\design_1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\MMP\ADCFinal\Adc3\testADC3.gen\sources_1\bd\design_1\hdl\design_1_wrapper.vhd:]
+write_hw_platform -fixed -include_bit -force -file C:/Users/MMP/ADCFinal/Adc3/design_1_wrapper.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/MMP/ADCFinal/Adc3/design_1_wrapper.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/MMP/ADCFinal/Adc3/design_1_wrapper.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (G:/Xilinx/Vivado/2024.1/data/embeddedsw) loading 1 seconds
+write_hw_platform: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2427.258 ; gain = 173.348
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 18 12:54:15 2024...

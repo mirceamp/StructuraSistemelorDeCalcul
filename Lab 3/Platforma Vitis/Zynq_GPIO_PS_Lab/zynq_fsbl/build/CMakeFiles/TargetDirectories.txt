@@ -1,3 +1,0 @@
-C:/Users/MMP/Zynq_GPIO_PS_Lab/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
-C:/Users/MMP/Zynq_GPIO_PS_Lab/zynq_fsbl/build/CMakeFiles/edit_cache.dir
-C:/Users/MMP/Zynq_GPIO_PS_Lab/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir

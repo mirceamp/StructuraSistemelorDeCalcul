@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Aug 17 00:47:39 2024
+# Process ID: 7544
+# Current directory: C:/Users/MMP/testADC3/testADC3.runs/design_1_xadc_wiz_0_0_synth_1
+# Command line: vivado.exe -log design_1_xadc_wiz_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xadc_wiz_0_0.tcl
+# Log file: C:/Users/MMP/testADC3/testADC3.runs/design_1_xadc_wiz_0_0_synth_1/design_1_xadc_wiz_0_0.vds
+# Journal file: C:/Users/MMP/testADC3/testADC3.runs/design_1_xadc_wiz_0_0_synth_1\vivado.jou
+# Running On        :DESKTOP-46511SM
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-11370H @ 3.30GHz
+# CPU Frequency     :3302 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :42626 MB
+# Swap memory       :6174 MB
+# Total Virtual     :48800 MB
+# Available Virtual :39353 MB
+#-----------------------------------------------------------
+source design_1_xadc_wiz_0_0.tcl -notrace

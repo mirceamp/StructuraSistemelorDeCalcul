@@ -1,0 +1,55 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Fri Oct 18 12:22:28 2024
+| Host         : DESKTOP-46511SM running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 1
++---------+----------+------------------------------+------------+
+| Rule    | Severity | Description                  | Violations |
++---------+----------+------------------------------+------------+
+| LUTAR-1 | Warning  | LUT drives async reset alert | 1          |
++---------+----------+------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/Inst_drp_arbiter/FIFO18E1_inst_data_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/axi4_stream_inst/FSM_sequential_state_reg[0]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/axi4_stream_inst/FSM_sequential_state_reg[1]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/axi4_stream_inst/FSM_sequential_state_reg[2]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/axi4_stream_inst/FSM_sequential_state_reg[3]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/axi4_stream_inst/busy_o_reg/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/axi4_stream_inst/channel_id_reg[0]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/axi4_stream_inst/channel_id_reg[1]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/axi4_stream_inst/channel_id_reg[2]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/axi4_stream_inst/channel_id_reg[3]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/axi4_stream_inst/channel_id_reg[4]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/axi4_stream_inst/channel_id_reg[6]/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/axi4_stream_inst/den_o_reg/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/axi4_stream_inst/mode_change_sig_reset_reg/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/axi4_stream_inst/valid_data_wren_reg/CLR,
+design_1_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/mode_change_reg/CLR
+ (the first 15 of 104 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+

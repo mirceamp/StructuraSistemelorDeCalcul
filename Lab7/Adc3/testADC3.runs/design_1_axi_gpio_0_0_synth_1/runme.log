@@ -1,0 +1,25 @@
+
+*** Running vivado
+    with args -log design_1_axi_gpio_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_gpio_0_0.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Fri Oct 18 12:20:16 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_axi_gpio_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 573.430 ; gain = 237.770
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_0_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry fe61ff514ef90772 to dir: C:/Users/MMP/ADCFinal/Adc3/testADC3.runs/design_1_axi_gpio_0_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/MMP/ADCFinal/Adc3/testADC3.cache/ip/2024.1/f/e/fe61ff514ef90772/design_1_axi_gpio_0_1.dcp to C:/Users/MMP/ADCFinal/Adc3/testADC3.runs/design_1_axi_gpio_0_0_synth_1/design_1_axi_gpio_0_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/MMP/ADCFinal/Adc3/testADC3.cache/ip/2024.1/f/e/fe61ff514ef90772/design_1_axi_gpio_0_1_sim_netlist.v to C:/Users/MMP/ADCFinal/Adc3/testADC3.runs/design_1_axi_gpio_0_0_synth_1/design_1_axi_gpio_0_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/MMP/ADCFinal/Adc3/testADC3.cache/ip/2024.1/f/e/fe61ff514ef90772/design_1_axi_gpio_0_1_sim_netlist.vhdl to C:/Users/MMP/ADCFinal/Adc3/testADC3.runs/design_1_axi_gpio_0_0_synth_1/design_1_axi_gpio_0_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/MMP/ADCFinal/Adc3/testADC3.cache/ip/2024.1/f/e/fe61ff514ef90772/design_1_axi_gpio_0_1_stub.v to C:/Users/MMP/ADCFinal/Adc3/testADC3.runs/design_1_axi_gpio_0_0_synth_1/design_1_axi_gpio_0_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/MMP/ADCFinal/Adc3/testADC3.cache/ip/2024.1/f/e/fe61ff514ef90772/design_1_axi_gpio_0_1_stub.vhdl to C:/Users/MMP/ADCFinal/Adc3/testADC3.runs/design_1_axi_gpio_0_0_synth_1/design_1_axi_gpio_0_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_axi_gpio_0_0, cache-ID = fe61ff514ef90772.
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 18 12:20:29 2024...
