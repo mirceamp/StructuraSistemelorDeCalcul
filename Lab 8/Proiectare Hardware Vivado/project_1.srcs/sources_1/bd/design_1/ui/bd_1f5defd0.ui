@@ -1,0 +1,47 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.663415",
+   "Default View_TopLeft":"241,-648",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port BRAM_PORTA_0 -pg 1 -lvl 5 -x 1860 -y -50 -defaultsOSRD
+preplace port BRAM_PORTA_1 -pg 1 -lvl 5 -x 1860 -y -200 -defaultsOSRD
+preplace port BRAM_PORTA_2 -pg 1 -lvl 5 -x 1860 -y -340 -defaultsOSRD
+preplace port BRAM_PORTA_3 -pg 1 -lvl 5 -x 1860 -y -490 -defaultsOSRD
+preplace portBus start_conversion -pg 1 -lvl 5 -x 1860 -y -420 -defaultsOSRD
+preplace portBus finished_conversion -pg 1 -lvl 5 -x 1860 -y -720 -defaultsOSRD -right
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 840 -y -100 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 1 -x 390 -y -50 -defaultsOSRD
+preplace inst axi_bram_ctrl_1 -pg 1 -lvl 1 -x 390 -y -200 -defaultsOSRD
+preplace inst axi_bram_ctrl_2 -pg 1 -lvl 1 -x 390 -y -340 -defaultsOSRD
+preplace inst axi_bram_ctrl_3 -pg 1 -lvl 1 -x 390 -y -490 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 4 -x 1630 -y -300 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 3 -x 1250 -y -150 -defaultsOSRD
+preplace inst axi_gpio_start -pg 1 -lvl 2 -x 840 -y -430 -defaultsOSRD
+preplace inst axi_gpio_finished -pg 1 -lvl 2 -x 840 -y -660 -defaultsOSRD
+preplace netloc axi_gpio_start_gpio_io_o 1 2 3 NJ -420 NJ -420 NJ
+preplace netloc gpio_io_i_0_1 1 2 3 N -650 N -650 1820
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 220 -570 610 -260 1040 -260 1460
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 1 1060 -170n
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 0 4 200 -580 620J -510 NJ -510 1450
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 1 4 530J 10 NJ 10 N 10 1840
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 1 4 640J -250 NJ -250 1430 -190 1840
+preplace netloc axi_bram_ctrl_2_BRAM_PORTA 1 1 4 NJ -340 NJ -340 1470 -180 1830
+preplace netloc axi_bram_ctrl_3_BRAM_PORTA 1 1 4 530J -520 NJ -520 N -520 1820
+preplace netloc axi_smc_M00_AXI 1 0 5 230 50 NJ 50 NJ 50 NJ 50 1820
+preplace netloc axi_smc_M01_AXI 1 0 5 210 60 NJ 60 NJ 60 NJ 60 1810
+preplace netloc axi_smc_M02_AXI 1 0 5 250 30 NJ 30 NJ 30 NJ 30 1800
+preplace netloc axi_smc_M03_AXI 1 0 5 240 40 NJ 40 NJ 40 NJ 40 1790
+preplace netloc axi_smc_M04_AXI 1 1 4 640 -290 NJ -290 1440J -170 1780
+preplace netloc axi_smc_M05_AXI 1 1 4 630 -280 NJ -280 1420J -160 1770
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 2 1050J -270 1430
+levelinfo -pg 1 0 390 840 1250 1630 1860
+pagesize -pg 1 -db -bbox -sgen -210 -970 2070 200
+"
+}
+{
+   "da_axi4_cnt":"6",
+   "da_board_cnt":"1",
+   "da_ps7_cnt":"1"
+}

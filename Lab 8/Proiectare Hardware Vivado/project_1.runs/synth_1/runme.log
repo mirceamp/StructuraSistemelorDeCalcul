@@ -1,0 +1,323 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sat Nov  9 02:29:24 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 578.176 ; gain = 241.797
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 601.516 ; gain = 9.082
+Command: read_checkpoint -auto_incremental -incremental C:/Users/MMP/IOT/project_1/project_1.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/MMP/IOT/project_1/project_1.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Device 21-9227] Part: xc7z020clg400-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8952
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1502.617 ; gain = 448.234
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/MMP/IOT/project_1/project_1.srcs/sources_1/new/top.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/MMP/IOT/project_1/project_1.srcs/sources_1/imports/hdl/design_1_wrapper.vhd:50]
+INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.vhd:15' bound to instance 'design_1_i' of component 'design_1' [C:/Users/MMP/IOT/project_1/project_1.srcs/sources_1/imports/hdl/design_1_wrapper.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.vhd:54]
+INFO: [Synth 8-3491] module 'design_1_axi_bram_ctrl_0_0' declared at 'C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/design_1_axi_bram_ctrl_0_0_stub.vhdl:6' bound to instance 'axi_bram_ctrl_0' of component 'design_1_axi_bram_ctrl_0_0' [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.vhd:909]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_0' [C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/design_1_axi_bram_ctrl_0_0_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'design_1_axi_bram_ctrl_1_0' declared at 'C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/design_1_axi_bram_ctrl_1_0_stub.vhdl:6' bound to instance 'axi_bram_ctrl_1' of component 'design_1_axi_bram_ctrl_1_0' [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.vhd:952]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_1_0' [C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/design_1_axi_bram_ctrl_1_0_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'design_1_axi_bram_ctrl_2_0' declared at 'C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/design_1_axi_bram_ctrl_2_0_stub.vhdl:6' bound to instance 'axi_bram_ctrl_2' of component 'design_1_axi_bram_ctrl_2_0' [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.vhd:995]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_2_0' [C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/design_1_axi_bram_ctrl_2_0_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'design_1_axi_bram_ctrl_3_0' declared at 'C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/design_1_axi_bram_ctrl_3_0_stub.vhdl:6' bound to instance 'axi_bram_ctrl_3' of component 'design_1_axi_bram_ctrl_3_0' [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.vhd:1038]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_3_0' [C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/design_1_axi_bram_ctrl_3_0_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_1' declared at 'C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/design_1_axi_gpio_0_1_stub.vhdl:6' bound to instance 'axi_gpio_finished' of component 'design_1_axi_gpio_0_1' [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.vhd:1081]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_1' [C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/design_1_axi_gpio_0_1_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_0' declared at 'C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/design_1_axi_gpio_0_0_stub.vhdl:6' bound to instance 'axi_gpio_start' of component 'design_1_axi_gpio_0_0' [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.vhd:1104]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/design_1_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_axi_smc_0' declared at 'C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/design_1_axi_smc_0_stub.vhdl:6' bound to instance 'axi_smc' of component 'design_1_axi_smc_0' [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.vhd:1127]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_smc_0' [C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/design_1_axi_smc_0_stub.vhdl:222]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/design_1_processing_system7_0_0_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.vhd:1340]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/design_1_processing_system7_0_0_stub.vhdl:77]
+INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_50M_0' declared at 'C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/design_1_rst_ps7_0_50M_0_stub.vhdl:6' bound to instance 'rst_ps7_0_50M' of component 'design_1_rst_ps7_0_50M_0' [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.vhd:1408]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_50M_0' [C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/design_1_rst_ps7_0_50M_0_stub.vhdl:22]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/MMP/IOT/project_1/project_1.srcs/sources_1/imports/hdl/design_1_wrapper.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/blk_mem_gen_0_stub.vhdl:24]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/blk_mem_gen_1_stub.vhdl:24]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/blk_mem_gen_2_stub.vhdl:24]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_3' [C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/.Xil/Vivado-4448-DESKTOP-46511SM/realtime/blk_mem_gen_3_stub.vhdl:24]
+INFO: [Synth 8-256] done synthesizing module 'top' (0#1) [C:/Users/MMP/IOT/project_1/project_1.srcs/sources_1/new/top.vhd:39]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1628.230 ; gain = 573.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1628.230 ; gain = 573.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1628.230 ; gain = 573.848
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1628.230 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3/blk_mem_gen_1_in_context.xdc] for cell 'blk_mem_gen3_inst'
+Finished Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3/blk_mem_gen_1_in_context.xdc] for cell 'blk_mem_gen3_inst'
+Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_1_in_context.xdc] for cell 'blk_mem_gen2_inst'
+Finished Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_1_in_context.xdc] for cell 'blk_mem_gen2_inst'
+Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_1_in_context.xdc] for cell 'blk_mem_gen0_inst'
+Finished Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_1_in_context.xdc] for cell 'blk_mem_gen0_inst'
+Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'zynq_ps_interface_inst/design_1_i/processing_system7_0'
+Finished Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'zynq_ps_interface_inst/design_1_i/processing_system7_0'
+Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'zynq_ps_interface_inst/design_1_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'zynq_ps_interface_inst/design_1_i/axi_bram_ctrl_0'
+Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'zynq_ps_interface_inst/design_1_i/axi_bram_ctrl_1'
+Finished Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'zynq_ps_interface_inst/design_1_i/axi_bram_ctrl_1'
+Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_2_0/design_1_axi_bram_ctrl_2_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'zynq_ps_interface_inst/design_1_i/axi_bram_ctrl_2'
+Finished Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_2_0/design_1_axi_bram_ctrl_2_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'zynq_ps_interface_inst/design_1_i/axi_bram_ctrl_2'
+Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_3_0/design_1_axi_bram_ctrl_3_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'zynq_ps_interface_inst/design_1_i/axi_bram_ctrl_3'
+Finished Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_3_0/design_1_axi_bram_ctrl_3_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'zynq_ps_interface_inst/design_1_i/axi_bram_ctrl_3'
+Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0/design_1_axi_smc_0_in_context.xdc] for cell 'zynq_ps_interface_inst/design_1_i/axi_smc'
+Finished Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0/design_1_axi_smc_0_in_context.xdc] for cell 'zynq_ps_interface_inst/design_1_i/axi_smc'
+Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_in_context.xdc] for cell 'zynq_ps_interface_inst/design_1_i/rst_ps7_0_50M'
+Finished Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_in_context.xdc] for cell 'zynq_ps_interface_inst/design_1_i/rst_ps7_0_50M'
+Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'zynq_ps_interface_inst/design_1_i/axi_gpio_start'
+Finished Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'zynq_ps_interface_inst/design_1_i/axi_gpio_start'
+Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_in_context.xdc] for cell 'zynq_ps_interface_inst/design_1_i/axi_gpio_finished'
+Finished Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_in_context.xdc] for cell 'zynq_ps_interface_inst/design_1_i/axi_gpio_finished'
+Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'blk_mem_gen1_inst'
+Finished Parsing XDC File [c:/Users/MMP/IOT/project_1/project_1.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'blk_mem_gen1_inst'
+Parsing XDC File [C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1730.680 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1730.680 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1730.680 ; gain = 676.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1730.680 ; gain = 676.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for blk_mem_gen3_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for blk_mem_gen2_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for blk_mem_gen0_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zynq_ps_interface_inst/design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zynq_ps_interface_inst/design_1_i/processing_system7_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zynq_ps_interface_inst/design_1_i/axi_bram_ctrl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zynq_ps_interface_inst/design_1_i/axi_bram_ctrl_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zynq_ps_interface_inst/design_1_i/axi_bram_ctrl_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zynq_ps_interface_inst/design_1_i/axi_bram_ctrl_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zynq_ps_interface_inst/design_1_i/axi_smc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zynq_ps_interface_inst/design_1_i/rst_ps7_0_50M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zynq_ps_interface_inst/design_1_i/axi_gpio_start. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zynq_ps_interface_inst/design_1_i/axi_gpio_finished. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for blk_mem_gen1_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1730.680 ; gain = 676.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1730.680 ; gain = 676.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   11 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               11 Bit    Registers := 4     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 8     
+	   6 Input   32 Bit        Muxes := 4     
+	   2 Input   11 Bit        Muxes := 12    
+	   6 Input   11 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 8     
+	   6 Input    3 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 44    
+	   6 Input    1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1730.680 ; gain = 676.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1730.680 ; gain = 676.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1730.680 ; gain = 676.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1730.680 ; gain = 676.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1730.680 ; gain = 676.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1730.680 ; gain = 676.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1730.680 ; gain = 676.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1730.680 ; gain = 676.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1730.680 ; gain = 676.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1730.680 ; gain = 676.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------+----------+
+|      |BlackBox name                   |Instances |
++------+--------------------------------+----------+
+|1     |blk_mem_gen_0                   |         1|
+|2     |blk_mem_gen_1                   |         1|
+|3     |blk_mem_gen_2                   |         1|
+|4     |blk_mem_gen_3                   |         1|
+|5     |design_1_axi_bram_ctrl_0_0      |         1|
+|6     |design_1_axi_bram_ctrl_1_0      |         1|
+|7     |design_1_axi_bram_ctrl_2_0      |         1|
+|8     |design_1_axi_bram_ctrl_3_0      |         1|
+|9     |design_1_axi_gpio_0_1           |         1|
+|10    |design_1_axi_gpio_0_0           |         1|
+|11    |design_1_axi_smc_0              |         1|
+|12    |design_1_processing_system7_0_0 |         1|
+|13    |design_1_rst_ps7_0_50M_0        |         1|
++------+--------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------------+------+
+|      |Cell                                 |Count |
++------+-------------------------------------+------+
+|1     |blk_mem_gen                          |     4|
+|5     |design_1_axi_bram_ctrl_0_0_bbox      |     1|
+|6     |design_1_axi_bram_ctrl_1_0_bbox      |     1|
+|7     |design_1_axi_bram_ctrl_2_0_bbox      |     1|
+|8     |design_1_axi_bram_ctrl_3_0_bbox      |     1|
+|9     |design_1_axi_gpio_0_0_bbox           |     1|
+|10    |design_1_axi_gpio_0_1_bbox           |     1|
+|11    |design_1_axi_smc_0_bbox              |     1|
+|12    |design_1_processing_system7_0_0_bbox |     1|
+|13    |design_1_rst_ps7_0_50M_0_bbox        |     1|
+|14    |LUT1                                 |     4|
+|15    |LUT2                                 |     9|
+|16    |LUT3                                 |    12|
+|17    |LUT4                                 |    33|
+|18    |LUT5                                 |    39|
+|19    |LUT6                                 |    19|
+|20    |FDRE                                 |   192|
++------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1730.680 ; gain = 676.297
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 1730.680 ; gain = 573.848
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1730.680 ; gain = 676.297
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1730.680 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1730.680 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 6c2bfd4d
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1730.680 ; gain = 1119.773
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1730.680 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/MMP/IOT/project_1/project_1.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  9 02:30:33 2024...
