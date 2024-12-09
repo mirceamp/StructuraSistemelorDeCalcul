@@ -344,7 +344,7 @@ for (uint32_t i = 0; i < imageSize; i += 4) {
         else if((i / 4) < 2 * 2048 && (i / 4) >= 2048)
         {
             bram_index = 1; 
-            address_offset = index2
+            address_offset = index2;
             index2+=4;  
         }
         else if((i / 4) < 3 * 2048 && (i / 4) >= 2 * 2048 )
