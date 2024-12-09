@@ -13,7 +13,6 @@
 #include "xparameters.h"
 #include "xil_io.h"
 #include "xil_cache.h"
-#include "xil_printf.h"
 #include "xil_types.h"
 #include "xgpio.h"
 
