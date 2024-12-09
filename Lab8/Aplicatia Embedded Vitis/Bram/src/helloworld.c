@@ -2,8 +2,6 @@
 * Copyright (C) 2023 Advanced Micro Devices, Inc. All Rights Reserved.
 * SPDX-License-Identifier: MIT
 ******************************************************************************/
-
-
 #include <sleep.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -31,8 +29,6 @@ FRESULT result;           // Variabila pentru rezultatele funcțiilor FatFS
 #define BRAM3_BASE_ADDR XPAR_XBRAM_3_BASEADDR
 
 XGpio startOperation, finishOperation;
-
-//#include "ff.h" // Include the necessary header for FatFs
 
 int write_grayscale_image(const char* filename, uint8_t* pixelBuffer, int width, int height) 
 {
@@ -271,52 +267,42 @@ for (uint32_t i = 0; i < imageSize; i += 4) {
    if((i / 4) < 2048 && (i / 4) >= 0)
    {
      bram_index = 0;   
-     address_offset = index1;//(index1 / 4) * 4;
+     address_offset = index1;
      index1+=4;
    }
    else if((i / 4) < 2 * 2048 && (i / 4) >= 2048)
    {
      bram_index = 1; 
-     address_offset = index2;//(index2 / 4) * 4;
+     address_offset = index2;
      index2+=4;  
    }
    else if((i / 4) < 3 * 2048 && (i / 4) >= 2 * 2048 )
    {
      bram_index = 2;  
-     address_offset = index3;//(index3 / 4) * 4;
+     address_offset = index3;
      index3+=4; 
    }
    else {
      bram_index = 3;
-     address_offset = index4;//(index4 / 4) * 4;
+     address_offset = index4;
      index4+=4; 
    }
-      // Determinăm în care BRAM să scriem
-    
-
+   // Determinăm în care BRAM să scriem
+  
     xil_printf("Suntem la pixelii %d %d %d %d care sunt plasati in BRAMUL %d.\n", i, i + 1, i + 2, i + 3,bram_index);
     
-   // uint32_t pixel_word2 = 0;
     switch (bram_index) {
         case 0:
             Xil_Out32(BRAM0_BASE_ADDR + address_offset, pixel_word); b1++;
-       //     usleep(10000);
-      //      pixel_word2 = Xil_In32(BRAM0_BASE_ADDR + address_offset);
             break;
         case 1:
             Xil_Out32(BRAM1_BASE_ADDR + address_offset, pixel_word); b2++;
-         //   usleep(10000);
-        //    pixel_word2 = Xil_In32(BRAM1_BASE_ADDR + address_offset);
             break;
         case 2:
             Xil_Out32(BRAM2_BASE_ADDR + address_offset, pixel_word); b3++;
-           // usleep(10000);
-          //  pixel_word2 = Xil_In32(BRAM2_BASE_ADDR + address_offset);
             break;
         case 3:
             Xil_Out32(BRAM3_BASE_ADDR + address_offset, pixel_word); b4++;
-           // usleep(10000);
-          //  pixel_word2 = Xil_In32(BRAM3_BASE_ADDR + address_offset);
             break;
     }
 }
@@ -353,24 +339,24 @@ for (uint32_t i = 0; i < imageSize; i += 4) {
         if((i / 4) < 2048 && (i / 4) >= 0)
         {
             bram_index = 0;   
-            address_offset = index1;//(index1 / 4) * 4;
+            address_offset = index1;
             index1+=4;
         }
         else if((i / 4) < 2 * 2048 && (i / 4) >= 2048)
         {
             bram_index = 1; 
-            address_offset = index2;//(index2 / 4) * 4;
+            address_offset = index2
             index2+=4;  
         }
         else if((i / 4) < 3 * 2048 && (i / 4) >= 2 * 2048 )
         {
             bram_index = 2;  
-            address_offset = index3;//(index3 / 4) * 4;
+            address_offset = index3;
             index3+=4; 
         }
         else {
             bram_index = 3;
-            address_offset = index4;//(index4 / 4) * 4;
+            address_offset = index4;
             index4+=4; 
         }
         // Determinăm în care BRAM să scriem
