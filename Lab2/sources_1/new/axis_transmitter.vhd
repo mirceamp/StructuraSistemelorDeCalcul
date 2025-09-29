@@ -49,7 +49,7 @@ begin
 
       else
         -- PORNIRE: la fiecare START, daca nu avem un beat în asteptare,
-        -- incarcam UN singur beat și setam TVALID=1, TLAST=1
+        -- incarcam UN singur beat si setam TVALID=1, TLAST=1
         if (start = '1') and (tvalid_r = '0') then
           tdata_r  <= (7 downto 4 => '0') & MEM_ROM(idx);
           tvalid_r <= '1';

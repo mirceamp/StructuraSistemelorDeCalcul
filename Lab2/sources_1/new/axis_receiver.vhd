@@ -35,7 +35,7 @@ begin
       else
         -- Lasam transferul să aiba loc DOAR la handshake: TVALID=1 și TREADY=1
         if (s_axis_tvalid = '1' and ready_en = '1') then
-          -- luam nibble-ul jos si adunam 1; aritmetica pe 4 biți face wrap (mod 16)
+          -- luam nibble-ul jos si adunam 1; aritmetica pe 4 biti face wrap (mod 16)
           leds_r <= std_logic_vector(unsigned(s_axis_tdata(3 downto 0)) + 1);
         end if;
       end if;
