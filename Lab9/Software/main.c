@@ -19,46 +19,47 @@
 #include <arm_neon.h>
 #include "xtmrctr.h"
 
-/* ---------------- Ajutor pentru temporizatorul AXI (xtmrctr) ---------------- */
-static XTmrCtr *pTimer = (XTmrCtr *)XPAR_XTMRCTR_0_BASEADDR; // pointer direct, fara reset
-static double timer_clock_hz = (double)XPAR_XTMRCTR_0_CLOCK_FREQUENCY;
-static double clock_period = 1.0 / XPAR_XTMRCTR_0_CLOCK_FREQUENCY;
-static uint32_t start_tick = 0;
-static uint32_t stop_tick  = 0;
-static int timer_running = 0;
+/* ----------------Functii de Ajutor pentru Temporizatorul AXI (xtmrctr) ---------------- */
+XTmrCtr m_AxiTimer;
+unsigned int m_tickCounter1;
+unsigned int m_tickCounter2;
+double m_clockPeriodSeconds;
+double m_timerClockFreq;
 
-void axiTimerHelperInit(void)
-{
-    // Nu apelam XTmrCtr_Initialize! Temporizatorul este deja configurat de platforma.
-    start_tick = 0;
-    stop_tick = 0;
-    timer_running = 0;
+void axiTimerHelperInit() {
+    XTmrCtr_Initialize(&m_AxiTimer, XPAR_XTMRCTR_0_BASEADDR);
+    m_timerClockFreq = (double) XPAR_XTMRCTR_0_CLOCK_FREQUENCY;
+    m_clockPeriodSeconds = (double) 1 / m_timerClockFreq;
 }
 
-void startTimer(void)
-{
-    start_tick = XTmrCtr_GetValue(pTimer, 0);
-    timer_running = 1;
+unsigned int getElapsedTicks() {
+    return m_tickCounter2 - m_tickCounter1;
 }
 
-void stopTimer(void)
-{
-    stop_tick = XTmrCtr_GetValue(pTimer, 0);
-    timer_running = 0;
+unsigned int startTimer() {
+    XTmrCtr_Reset(&m_AxiTimer, 0);
+    m_tickCounter1 = XTmrCtr_GetValue(&m_AxiTimer, 0);
+    XTmrCtr_Start(&m_AxiTimer, 0);
+    return m_tickCounter1;
 }
 
-double getElapsedTimeInSeconds(void)
-{
-    uint32_t t_start = start_tick;
-    uint32_t t_stop = timer_running ? XTmrCtr_GetValue(pTimer, 0) : stop_tick;
-
-    uint32_t diff = (t_stop >= t_start) ? (t_stop - t_start) : (0xFFFFFFFF - t_start + 1 + t_stop);
-    return (double)diff / timer_clock_hz;
+unsigned int stopTimer() {
+    XTmrCtr_Stop(&m_AxiTimer, 0);
+    m_tickCounter2 = XTmrCtr_GetValue(&m_AxiTimer, 0);
+    return m_tickCounter2 - m_tickCounter1;
 }
 
-double getElapsedTimeInMilliseconds(void)
-{
-    return getElapsedTimeInSeconds() * 1000.0;
+double getElapsedTimeInSeconds() {
+    double elapsedTimeInSeconds = (double) (m_tickCounter2 - m_tickCounter1) * m_clockPeriodSeconds;
+    return elapsedTimeInSeconds;
+}
+
+double getClockPeriod() {
+    return m_clockPeriodSeconds;
+}
+
+double getTimerClockFreq() {
+    return m_timerClockFreq;
 }
 /* ----------------------------------------------------------- */
 XGpio gpio;
@@ -92,7 +93,7 @@ void *pFrames[DISPLAY_NUM_FRAMES];
 
 /* Numele fisierelor BMP de pe cardul SD */
 #define RGB_FILENAME   "bucovina.bmp"
-#define GRAY_FILENAME  "cat_gray.bmp"
+#define RGB_FILENAME2  "cat.bmp"
 
 /* Structura pentru datele imaginii incarcate */
 typedef struct {
@@ -405,19 +406,55 @@ void rgb24_to_vdma32_scaled_display_db(const uint8_t *src,
     /* Asteptam sincronizarea pentru a evita efectul de tearing */
     DisplayWaitForSync(&dispCtrl);
 }
-
-/* Adunare cu factor aditiv */
+//adunare cu factor aditiv de pe switchuri versiunea scalara
+void add_scalar_rgb24(const uint8_t *src, uint8_t *dst, uint32_t bytes, uint8_t factor)
+{
+    for (uint32_t i = 0; i < bytes; i++) {
+        int t = src[i] + factor;
+        if (t > 255)
+            t = 255;        // saturare manuală
+        dst[i] = (uint8_t)t;
+    }
+}
+/* Adunare cu factor aditiv ARM NEON*/
 void add_neon_rgb24(const uint8_t *src, uint8_t *dst, uint32_t bytes, uint8_t factor)
 {
    // TO DO
 }
 
-/* Negativul imaginii */
+/* Negativul imaginii scalar */
+void negative_scalar_rgb24(const uint8_t *src, uint8_t *dst, uint32_t bytes)
+{
+    for (uint32_t i = 0; i < bytes; i++) {
+    // Negativul unui pixel 8-bit se face prin 255 - valoare
+        dst[i] = 255 - src[i];
+    }
+}
+
+/* Negativul imaginii ARM NEON */
 void negative_neon_rgb24(const uint8_t *src, uint8_t *dst, uint32_t bytes)
 {
     // TO DO
 }
+//transformarea imaginii in imagine cu tonuri de gri, versiunea scalara
+void grayscale_scalar_rgb24(const uint8_t *src, uint8_t *dst, uint32_t pixels) {
 
+    for (uint32_t i = 0; i < pixels; i++) {
+        const uint8_t *p = src + i * 3;
+//luam valorile de r, g si b
+        uint16_t r = p[0];
+        uint16_t g = p[1];
+        uint16_t b = p[2];
+// Formula grayscale: aproximare a luminozității percepute
+ // 0.299 * R + 0.587 * G + 0.114 * B ≈ (77*R + 150*G + 29*B) >> 8
+        uint8_t gray = (uint8_t)((77 * r + 150 * g + 29 * b) >> 8);
+
+        // Salvăm aceeași valoare pe toate cele trei canale (pentru format RGB)
+        dst[i * 3 + 0] = gray;
+        dst[i * 3 + 1] = gray;
+        dst[i * 3 + 2] = gray;
+    }
+}
 /* Transformare imagine RGB in tonuri de gri */
 void grayscale_neon_rgb24(const uint8_t *src, uint8_t *dst, uint32_t pixels) {
   // TO DO
@@ -438,44 +475,50 @@ static void main_loop(const ImageRGB *img_rgb) {
     }
    
     while (1) {
-		//se citeste valoarea butoanelor si a switch-urilor
+
         btn_data = readButtons();
         sw_data  = readSwitches(); /* 0..15 */
 
-        uint8_t param = (uint8_t)(sw_data * 17); /* scala 0..255 */
+        uint8_t param = (uint8_t)(sw_data * 17); /* scale to 0..255 */
         const uint8_t *src_for_display = NULL;
         bool want_render = false;    
 
        if (btn_data & 0x1) { // RGB
-	        //daca butonul 1 e apasat afisam poza originala 
             src_for_display = img_rgb->rgb24;
             want_render = true;
             
         while (readButtons() & 0x1) usleep(40000);
     } else if (btn_data & 0x2) { // GRAY
-       
-        uint32_t src_pixels = img_rgb->width * img_rgb->height;
-		//daca butonul 2 e apasat afisam poza in tonuri de gri
-        grayscale_neon_rgb24(img_rgb->rgb24, tmp_rgb24, src_pixels);
-        
-		src_for_display = tmp_rgb24;               
-        want_render = true;
-
-        while (readButtons() & 0x2) usleep(40000);
+       uint32_t src_pixels = img_rgb->width * img_rgb->height;
+      // double total_time = 0;
+      //startTimer();
+      grayscale_neon_rgb24(img_rgb->rgb24, tmp_rgb24, src_pixels);
+      //stopTimer();
+      //total_time = getElapsedTimeInSeconds();
+      //printf("Optimized grayscale conversion completed in %lf seconds\n\r", total_time);
+      src_for_display = tmp_rgb24;               
+      want_render = true;
+      
+      while (readButtons() & 0x2) usleep(40000);
     }else if (btn_data & 0x4) {
-        //daca butonul 3 e apasat afisam poza modificata cu un factor aditiv 
+        //double total_time = 0;
+        //startTimer();
         add_neon_rgb24(img_rgb->rgb24, tmp_rgb24, (uint32_t)tmp_bytes, param);
-               
+        //stopTimer();
+        //total_time = getElapsedTimeInSeconds();
+        //printf("Optimized addition with aditiv factor completed in %lf seconds\n\r", total_time);
         src_for_display = tmp_rgb24; 
         want_render = true;
        
     }else if (btn_data & 0x8) {
-         //daca butonul 4 e apasat afisam negativul imaginii
+         //double total_time = 0;
+         //startTimer();      
          negative_neon_rgb24(img_rgb->rgb24, tmp_rgb24, (uint32_t)tmp_bytes);
-               
+         //stopTimer();
+         //total_time = getElapsedTimeInSeconds();
+         //printf("Optimized image negative completed in %lf seconds\n\r", total_time);
          src_for_display = tmp_rgb24; 
          want_render = true;
-        
     }
     else {
             usleep(50000);
@@ -488,6 +531,7 @@ static void main_loop(const ImageRGB *img_rgb) {
         }      
     }
 }
+
 
 int main() {
     init_platform();
