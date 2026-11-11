@@ -1,0 +1,3 @@
+C:/Users/MMP/LABDMA/platform/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
+C:/Users/MMP/LABDMA/platform/zynq_fsbl/build/CMakeFiles/edit_cache.dir
+C:/Users/MMP/LABDMA/platform/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir
